@@ -1,5 +1,7 @@
 <?php namespace CodeCommerce\Http\Controllers;
 
+use CodeCommerce\Category;
+
 class WelcomeController extends Controller {
 
 	private $categories;
