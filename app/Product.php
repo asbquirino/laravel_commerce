@@ -2,8 +2,9 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model {
+class Product extends Model
+{
 
-    protected $fillable = ['name','description','price'];
+    protected $fillable = ['name', 'description', 'price'];
 
 }
