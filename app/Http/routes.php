@@ -20,7 +20,22 @@ Route::controllers([
     'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('admin/categories', 'AdminCategoriesController@index');
+Route::pattern('id', '[0-9]+');
 
-Route::get('admin/products', 'AdminProductsController@index');
+Route::group(['prefix'=>'admin'], function(){
 
+    Route::group(['prefix'=>'categories'], function(){
+    Route::get('', 'AdminCategoriesController@index');
+    Route::get('create', 'AdminCategoriesController@create');
+    Route::get('update/{id}', 'AdminCategoriesController@update');
+    Route::get('delete/{id}', 'AdminCategoriesController@delete');
+    });
+
+    Route::group(['prefix'=>'products'], function(){
+    Route::get('', 'AdminProductsController@index');
+    Route::get('create', 'AdminProductsController@create');
+    Route::get('update/{id}', 'AdminProductsController@update');
+    Route::get('delete/{id}', 'AdminProductsController@delete');
+    });
+
+});
