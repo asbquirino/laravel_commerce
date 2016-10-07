@@ -32,4 +32,19 @@ class AdminProductsController extends Controller
         return view('product', compact('products'));
     }
 
+    public function create()
+    {
+        return 'Create Product';
+    }
+
+    public function update($id)
+    {
+        return "Update Product Id = $id";
+    }
+
+    public function delete($id)
+    {
+        return "Delete Product Id = $id";
+    }
+
 }
