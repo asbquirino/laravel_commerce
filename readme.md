@@ -13,3 +13,9 @@
 - Criado os models Category e Product.
 - Criada as respectivas rotas de acesso.
 - Criada as respectivas views.
+
+### Projeto 3
+
+- Agrupada as rotas admin, categories e products.
+- Passando parâmetros nas rotas.
+- Feita a validação dos parâmetras passados nas rotas.
