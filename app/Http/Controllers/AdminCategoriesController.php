@@ -32,4 +32,19 @@ class AdminCategoriesController extends Controller
         return view('category', compact('categories'));
     }
 
+    public function create()
+    {
+        return "Create Category";
+    }
+
+    public function update($id)
+    {
+        return "Update Category Id = $id";
+    }
+
+    public function delete($id)
+    {
+        return "Delete Category Id = $id";
+    }
+
 }
