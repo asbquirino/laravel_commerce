@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
 
-        <h1>Categories</h1>
+        <h1>Create Category</h1>
 
         @if ($errors->any())
             <ul class="alert">
