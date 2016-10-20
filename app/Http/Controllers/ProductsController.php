@@ -28,6 +28,7 @@ class ProductsController extends Controller {
 
     public function store(Requests\ProductRequest $request)
     {
+
         $input = $request->all();
         $product = $this->productModel->fill($input);
         $product->save();
