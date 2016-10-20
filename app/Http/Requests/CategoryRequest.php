@@ -23,7 +23,7 @@ class CategoryRequest extends Request {
 	{
 		return [
 			'name' => 'required|min:5',
-            'description' => 'required'
+            'description' => 'required|min:10'
 		];
 	}
 
