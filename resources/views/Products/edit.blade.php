@@ -27,17 +27,15 @@
 
         <div class="form-group">
             {!! Form::label('price', 'Price:') !!}
-            {!! Form::text('price', null, ['class'=>'form-control']) !!}
+            {!! Form::text('price', $product->price, ['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
             {!! Form::label('featured', 'Featured:') !!}
-            {!! Form::text('featured', null, ['class'=>'form-control']) !!}
-        </div>
-
-        <div class="form-group">
-            {!! Form::label('recommend', 'Recommend:') !!}
-            {!! Form::text('recommend', null, ['class'=>'form-control']) !!}
+            {!! Form::checkbox('featured', 1, $product->featured ) !!}
+            &nbsp;&nbsp;&nbsp;
+            {!! Form::label('recommended', 'Recommended:') !!}
+            {!! Form::checkbox('recommended', 1, $product->recommended ) !!}
         </div>
 
         <div class="form-group">
