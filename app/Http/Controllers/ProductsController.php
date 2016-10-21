@@ -43,9 +43,6 @@ class ProductsController extends Controller {
 
     public function update(Requests\ProductRequest $request, $id)
     {
-        $this->productModel->find($id);
-        print_r($_POST);
-        die;
         $this->productModel->find($id)->update($request->all());
         return redirect()->route('products');
     }
