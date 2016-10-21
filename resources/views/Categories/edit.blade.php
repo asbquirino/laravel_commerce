@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
 
-        <h1>Edit Product: {{ $product->name }}</h1>
+        <h1>Edit Category: {{ $category->name }}</h1>
 
         @if ($errors->any())
             <ul class="alert">
@@ -13,33 +13,20 @@
             </ul>
         @endif
 
-        {!! Form::open(['route'=>['products.update', $product->id], 'method'=>'put']) !!}
+        {!! Form::open(['route'=>['categories.update', $category->id], 'method'=>'put']) !!}
 
         <div class="form-group">
             {!! Form::label('name', 'Name:') !!}
-            {!! Form::text('name', $product->name, ['class'=>'form-control']) !!}
+            {!! Form::text('name', $category->name, ['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
             {!! Form::label('description', 'Description:') !!}
-            {!! Form::textarea('description', $product->description, ['class'=>'form-control']) !!}
+            {!! Form::textarea('description', $category->description, ['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
-            {!! Form::label('price', 'Price:') !!}
-            {!! Form::text('price', $product->price, ['class'=>'form-control']) !!}
-        </div>
-
-        <div class="form-group">
-            {!! Form::label('featured', 'Featured:') !!}
-            {!! Form::checkbox('featured', $product->featured == true, ['checked' => 'checked']) !!}
-            &nbsp;&nbsp;&nbsp;
-            {!! Form::label('recommended', 'Recommended:') !!}
-            {!! Form::checkbox('recommended', $product->recommended == true, ['checked' => 'checked']) !!}
-        </div>
-
-        <div class="form-group">
-            {!! Form::submit('Save Product', ['class'=>'btn btn-primary']) !!}
+            {!! Form::submit('Save Category', ['class'=>'btn btn-primary']) !!}
         </div>
 
         {!! Form::close() !!}
