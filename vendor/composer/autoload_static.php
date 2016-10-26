@@ -642,6 +642,7 @@ class ComposerStaticInite54e3c1eaab1e4ffd669049d26b5767e
         'SessionHandlerInterface' => __DIR__ . '/..' . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/Text/Template.php',
+        'UserTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UserTableSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
