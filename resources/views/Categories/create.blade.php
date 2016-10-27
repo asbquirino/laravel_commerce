@@ -27,6 +27,7 @@
 
         <div class="form-group">
             {!! Form::submit('Add Category', ['class'=>'btn btn-primary']) !!}
+            <a href="{{route('categories')}}" class="btn btn-default">Voltar</a>
         </div>
 
         {!! Form::close() !!}
