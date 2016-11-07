@@ -21,7 +21,7 @@ class ProductTableSeeder extends Seeder
                 'price' => $faker->randomFloat($nbMaxDecimals = 2, $min = 1, $max = 99999.99),
                 'featured' => $faker->numberBetween($min = 0, $max = 1),
                 'recommended' => $faker->numberBetween($min = 0, $max = 1),
-                'category_id' => $faker->numberBetween(1, 15)
+                'category_id' => $faker->numberBetween($min = 1, $max = 15)
             ]);
         }
 
