@@ -2,17 +2,20 @@
 ----------
 ## Módulo Laravel 5
 
-### Projeto 1 (Instalando e versionando)
+### Projeto 6 (Relacionando)
 
-- Feita a instalação do Laravel 5.0.
-- Feito o versionamento da aplicação "laravel_commerce".
-- Alterado o app name da aplicação.
+- Relacionando os Models Products com Categories.
+- Mostras as Categories dos Products
+- Implementando paginação para Products e Categories
 
-### Projeto 2 (Criando os primeiros models)
+### Projeto 5 (Seeding)
 
-- Criado os models Category e Product.
-- Criada as respectivas rotas de acesso.
-- Criada as respectivas views.
+- Criada rotinas para popular as tabelas Category, Product e User, utilizando a biblioteca Facker.
+
+### Projeto 4 (CRUD)
+
+- Utilizando Migrations para alterar estrutura da tabela Product.
+- Criado CRUD para os models Categories e Products.
 
 ### Projeto 3 (Criação das rotas)
 
@@ -20,11 +23,15 @@
 - Passando parâmetros nas rotas.
 - Feita a validação dos parâmetras passados nas rotas.
 
-### Projeto 4 (CRUD)
+### Projeto 2 (Criando os primeiros models)
 
-- Utilizando Migrations para alterar estrutura da tabela Product.
-- Criado CRUD para os models Categories e Products.
+- Criado os models Category e Product.
+- Criada as respectivas rotas de acesso.
+- Criada as respectivas views.
 
-### Projeto 5 (Seeding)
+### Projeto 1 (Instalando e versionando)
 
-- Criada rotinas para popular as tabelas Category, Product e User, utilizando a biblioteca Facker.
+- Feita a instalação do Laravel 5.0.
+- Feito o versionamento da aplicação "laravel_commerce".
+- Alterado o app name da aplicação.
+
