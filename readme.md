@@ -2,6 +2,10 @@
 ----------
 ## Módulo Laravel 5
 
+### Projeto 7 (Image upload)
+
+- Implementada rotinas de Upload, Exibição e Exclusão de imagens, e relacionando-as aos produtos.
+
 ### Projeto 6 (Relacionando)
 
 - Relacionando os Models Products com Categories.
